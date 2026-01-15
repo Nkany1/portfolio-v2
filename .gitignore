@@ -46,3 +46,7 @@ out
 .env
 .env.local
 .vercel
+
+.vs
+.vs/
+
