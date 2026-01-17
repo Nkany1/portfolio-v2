@@ -1,11 +1,12 @@
 export default function Hero() {
-    return (
-      <section id="home" style={{ padding: "40px 24px" }}>
+  return (
+    <section id="home" className="hero">
+      <div className="hero__inner">
         <h1>Nkanyiso Mncwabe</h1>
         <p>
           Application Support Analyst | DevOps & Cloud | Software Development
         </p>
-      </section>
-    );
-  }
-  
+      </div>
+    </section>
+  );
+}
