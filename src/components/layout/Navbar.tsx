@@ -4,7 +4,7 @@ export default function Navbar() {
         <nav style={{ display: "flex", gap: "14px", alignItems: "center" }}>
           <a href="#home">Home</a>
           <a href="#projects">Projects</a>
-          <a href="#technologies">Technologies</a>
+          <a href="#technologies">Tech Stack</a>
           <a href="#certifications">Certs</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
