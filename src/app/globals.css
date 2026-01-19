@@ -199,5 +199,49 @@
   font-weight: 600;
 }
 
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: 80px 24px;
+  background: #020617;
+}
+
+.contact__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #e5e7eb;
+}
+
+.contact p {
+  color: #9ca3af;
+  margin-bottom: 24px;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.contact__link {
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #22d3ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact__link:hover {
+  border-color: rgba(34, 211, 238, 0.35);
+}
+
 
 
