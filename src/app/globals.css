@@ -61,3 +61,42 @@
   font-weight: 500;
 }
 
+/* ===== TECH STACK SECTION ===== */
+.tech {
+  padding: 80px 24px;
+  background: #0b0f17;
+}
+
+.tech__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tech h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: #e5e7eb;
+}
+
+.tech p {
+  color: #9ca3af;
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.tech__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tech__tag {
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #e5e7eb;
+  font-size: 0.95rem;
+}
+
+
