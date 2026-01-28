@@ -13,7 +13,7 @@ export default function Certifications() {
               <span className="cert-issuer">Issuer: LinkedIn Learning</span>
               <a
                 className="cert-pdf"
-                href="/certs/bash-mastery.pdf"
+                href="/certs/bash_nkanyiso.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -47,7 +47,7 @@ export default function Certifications() {
               <span className="cert-issuer">Issuer: LinkedIn Learning</span>
               <a
                 className="cert-pdf"
-                href="/certs/excel-beginner-to-advanced.pdf"
+                href="/certs/Excel_nkanyiso.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
