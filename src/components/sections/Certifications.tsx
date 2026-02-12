@@ -1,3 +1,24 @@
+
+
+const certifications = [
+  {
+    title: "Bash Mastery: The Complete Guide to Bash Shell Scripting",
+    issuer: "LinkedIn Learning",
+    pdf: "/certs/Bash_nkanyiso.pdf",
+  },
+  {
+    title: "The Complete Oracle APEX Fundamentals Course",
+    issuer: "LinkedIn Learning",
+    pdf: "/certs/oracle_apex_Nkanyiso.pdf",
+  },
+  {
+    title: "Microsoft Excel – Excel from Beginner to Advanced",
+    issuer: "LinkedIn Learning",
+    pdf: "/certs/Excel_nkanyiso.pdf",
+  },
+];
+
+
 export default function Certifications() {
   return (
     <section id="certifications" className="certs">
@@ -5,56 +26,21 @@ export default function Certifications() {
         <h2>Certifications</h2>
 
         <div className="certs__list">
-          <div className="cert-card">
-            <h3>Bash Mastery: The Complete Guide to Bash Shell Scripting</h3>
-            <p>Completed via LinkedIn Learning — command-line scripting and automation.</p>
+          {certifications.map((cert) => (
+            <div className="cert-card" key={cert.title}>
+              <h3>{cert.title}</h3>
+              <p>Issuer: {cert.issuer}</p>
 
-            <div className="cert-actions">
-              <span className="cert-issuer">Issuer: LinkedIn Learning</span>
               <a
                 className="cert-pdf"
-                href="/certs/bash_nkanyiso.pdf"
+                href={cert.pdf}
                 target="_blank"
                 rel="noreferrer"
               >
                 View as PDF
               </a>
             </div>
-          </div>
-
-          <div className="cert-card">
-            <h3>The Complete Oracle APEX Fundamentals Course</h3>
-            <p>Completed via LinkedIn Learning — Oracle APEX fundamentals.</p>
-
-            <div className="cert-actions">
-              <span className="cert-issuer">Issuer: LinkedIn Learning</span>
-              <a
-                className="cert-pdf"
-                href="/certs/oracle_apex_Nkanyiso.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View as PDF
-              </a>
-            </div>
-          </div>
-
-          <div className="cert-card">
-            <h3>Microsoft Excel – Excel from Beginner to Advanced</h3>
-            <p>Completed via LinkedIn Learning — Excel functions and data analysis.</p>
-
-            <div className="cert-actions">
-              <span className="cert-issuer">Issuer: LinkedIn Learning</span>
-              <a
-                className="cert-pdf"
-                href="/certs/Excel_nkanyiso.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View as PDF
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>
