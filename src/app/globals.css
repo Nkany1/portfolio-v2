@@ -318,4 +318,19 @@ h1, h2, h3 {
   color: #22d3ee;
 }
 
+.toggle-btn {
+  margin-top: 24px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: #22d3ee;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.toggle-btn:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+}
 
