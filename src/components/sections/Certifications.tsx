@@ -1,4 +1,6 @@
 
+"use client";
+
 
 const certifications = [
   {
@@ -19,18 +21,27 @@ const certifications = [
 ];
 
 
+
+
+import { useState } from "react";
+
 export default function Certifications() {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleCerts = showAll
+    ? certifications
+    : certifications.slice(0, 2);
+
   return (
     <section id="certifications" className="certs">
       <div className="certs__inner">
         <h2>Certifications</h2>
 
         <div className="certs__list">
-          {certifications.map((cert) => (
+          {visibleCerts.map((cert) => (
             <div className="cert-card" key={cert.title}>
               <h3>{cert.title}</h3>
               <p>Issuer: {cert.issuer}</p>
-
               <a
                 className="cert-pdf"
                 href={cert.pdf}
@@ -42,6 +53,15 @@ export default function Certifications() {
             </div>
           ))}
         </div>
+
+        {certifications.length > 2 && (
+          <button
+            className="toggle-btn"
+            onClick={() => setShowAll(!showAll)}
+          >
+            {showAll ? "Show Less" : "Show More"}
+          </button>
+        )}
       </div>
     </section>
   );
